@@ -14,6 +14,6 @@ class Solution(object):
             else:
                 count -=1
                 if count >0:
-                    result += ch
+                    result +=ch
         return result
         
