@@ -5,14 +5,13 @@ class Solution(object):
         :rtype: int
         """
         n = len(nums)
-        total = 0
         maxi = float("-inf")
+        total = 0
+        for i in range(0,n):
+            total = total + nums[i] 
+            maxi = max(total,maxi)
 
-        for i  in range(0,n):
-            total = total + nums[i]
-            maxi = max(maxi,total)
-
-            if total < 0:
-                total =0
-        
+            if total <0:
+                total = 0
         return maxi
+       
