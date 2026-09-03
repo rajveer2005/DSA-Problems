@@ -19,12 +19,22 @@ class Solution(object):
         #     temp = temp.next
         # return temp
 
-        slow = head
-        fast = head
+        # slow = head
+        # fast = head
 
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
-        return slow
+        # while fast and fast.next:
+        #     slow = slow.next
+        #     fast = fast.next.next
+        # return slow
+        n = 0
+        temp = head
+        while temp:
+            n +=1
+            temp = temp.next
+        temp = head
+        for i in range(0,n//2):
+            temp = temp.next
+        return temp
+            
 
         
